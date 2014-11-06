@@ -1,15 +1,16 @@
 <section class="content">
-    <h2>Modulo 1</h2>
-    <ul>
-        <li ng-repeat="material in materialM1">
+    <h2>Módulo 1</h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div ng-repeat="material in materialM1" class="col-4">
+                <presentation-thumbnails title="material.title" file="material.file" thumb="material.thumb" ></presentation-thumbnails>
+            </div>
+        </div>
+    </div>
+    <h2>Módulo 2</h2>
+    <div class="row">
+        <div ng-repeat="material in materialM2" class="col-4">
             <presentation-thumbnails title="material.title" file="material.file" thumb="material.thumb" ></presentation-thumbnails>
-        </li>
-
-    </ul>
-    <h2>Modulo 2</h2>
-    <ul>
-        <li ng-repeat="material in materialM2">
-            <presentation-thumbnails title="material.title" file="material.file" thumb="material.thumb" ></presentation-thumbnails>
-        </li>
-    </ul>
+        </div>
+    </div>
 </section>
