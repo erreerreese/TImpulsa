@@ -1,5 +1,5 @@
 (function(){
-  var app = angular.module('TImpulsa', ['ui.router'])
+  var app = angular.module('TImpulsa', ['ui.router', 'uiRouterStyles'])
       .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         $locationProvider.html5Mode(true);
         $urlRouterProvider.otherwise("/");
