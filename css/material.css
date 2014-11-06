@@ -1,0 +1,9 @@
+.thumbnail{
+    height: 200px;
+    width: 267px;
+    overflow: hidden;
+}
+.thumbnail img{
+    height: auto;
+    position: relative;
+    top: 0;

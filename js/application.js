@@ -15,8 +15,9 @@
         .state('material', {
             url: "/material",
             templateUrl: 'views/material.html',
-            controller: function($scope, $rootScope){
-              $rootScope.title='TImpulsa - Material';
+            controller: 'MaterialController',
+            data: {
+                css: '/css/material.css'
             }
           })
         .state('fotogaleria', {

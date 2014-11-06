@@ -1,3 +1,15 @@
 <section class="content">
-  <p>Estamos en la seccion de Material</p>
+    <h2>Modulo 1</h2>
+    <ul>
+        <li ng-repeat="material in materialM1">
+            <presentation-thumbnails title="material.title" file="material.file" thumb="material.thumb" ></presentation-thumbnails>
+        </li>
+
+    </ul>
+    <h2>Modulo 2</h2>
+    <ul>
+        <li ng-repeat="material in materialM2">
+            <presentation-thumbnails title="material.title" file="material.file" thumb="material.thumb" ></presentation-thumbnails>
+        </li>
+    </ul>
 </section>
