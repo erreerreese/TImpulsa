@@ -1,0 +1,114 @@
+* {
+	box-sizing: border-box;
+}
+
+.content {
+	float: left;
+	width: 100%;
+	padding: 10px 20px;
+}
+
+.foto {
+	float: left;
+	margin: 10px 10px 30px 0;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 2px;
+}
+
+#foto1 {
+	background-image: url(../images/1.jpg);
+}
+
+#foto2 {
+	background-image: url(../images/2.jpg);
+}
+
+#foto3 {
+	background-image: url(../images/3.jpg);
+}
+
+#foto4 {
+	background-image: url(../images/4.jpg);
+}
+
+#foto5 {
+	background-image: url(../images/5.jpg);
+}
+
+#foto6 {
+	background-image: url(../images/6.jpg);
+}
+
+#foto7 {
+	background-image: url(../images/7.jpg);
+}
+
+#foto8 {
+	background-image: url(../images/8.jpg);
+}
+
+#foto9 {
+	background-image: url(../images/9.jpg);
+}
+
+#foto10 {
+	background-image: url(../images/10.jpg);
+}
+
+#foto11 {
+	background-image: url(../images/11.jpg);
+}
+
+#foto12 {
+	background-image: url(../images/12.jpg);
+}
+
+#foto13 {
+	background-image: url(../images/13.jpg);
+}
+
+#foto14 {
+	background-image: url(../images/14.jpg);
+}
+
+#foto15 {
+	background-image: url(../images/15.jpg);
+}
+
+#foto16 {
+	background-image: url(../images/16.jpg);
+}
+
+#foto17 {
+	background-image: url(../images/17.jpg);
+}
+
+#foto18 {
+	background-image: url(../images/18.jpg);
+}
+
+#foto19 {
+	background-image: url(../images/19.jpg);
+}
+
+@media only screen and (min-width : 300px) {
+	.foto {
+		width: 100%;
+		padding-top: 66%;
+	}
+}
+
+@media only screen and (min-width : 770px) {
+	.foto {
+		width: 48%;
+		padding-top: 36%;
+	}
+}
+
+@media only screen and (min-width : 1280px) {
+	.foto {
+		width: 32%;
+		padding-top: 24%;
+	}
+}
