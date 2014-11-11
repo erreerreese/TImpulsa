@@ -1,0 +1,81 @@
+/* ========= Furatto overrides ====== */
+
+.navigation-bar {
+  background: #a9f5f2;
+}
+.navigation-bar ul li a:hover:not(.button) {
+  background: #a9ebf5;
+}
+
+.navigation-bar ul li.active>a {
+  background: #a9ebf5;
+  color: #707070;
+}
+.navigation-bar ul li.active>a:hover {
+  color: #7d7d7d;
+}
+
+.navigation-bar ul li a:hover {
+  color: #969696;
+}
+
+.navigation-bar ul li.divider {
+  border-left: 1px solid #eefdfc;
+}
+
+.navigation-bar ul li a {
+  color: #707070;
+}
+
+/* ======= Main styles ====== */
+body {
+  background: #f2f2f2;
+  color: #3b3b3b
+}
+
+#main-view {
+  margin-top: 70px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 85%;
+}
+
+footer {
+  margin: 0 auto;
+  width: 85%;
+  margin-top: 10px;
+}
+
+footer div p {
+  margin: 0;
+  font-size: 12px !important;
+  color: #626262;
+}
+
+footer ul {
+  text-align: right;
+  font-size: 12px !important;
+  margin: 0;
+}
+
+footer .pull-right ul li {
+  float: right;
+  list-style: none;
+  padding-left: 10px;
+}
+
+footer a:hover {
+  color: #aaa;
+  text-decoration: none !important;
+}
+
+footer a {
+  color: rgba(28,202,229, 0.7);
+}
+
+.logos {
+  text-align: center;
+}

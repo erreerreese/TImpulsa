@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <title ng-bind="title">TImpulsa</title>
+<link href='css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
 <!-- Furatto core CSS -->
 <link href="css/furatto.min.css" rel="stylesheet">
@@ -16,11 +17,12 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<link href='css/main.css' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-<section class="wrapper" ng-controller="PanelController as panel">
-  <nav class="navigation-bar">
+<section ng-controller="PanelController as panel">
+  <nav class="navigation-bar fixed">
     <ul class="brand-section">
       <li class="brand-name">
       <a href="/" class="menu-trigger" id="trigger">TImpulsa</a>
@@ -31,28 +33,33 @@
     </ul>
     <ul class="pull-right">
       <li class="divider"></li>
-      <li ui-sref-active="active">
-      <a ui-sref="inicio">Home</a>
-      </li>
+      <li ui-sref-active="active"><a ui-sref="inicio"><i class="fa fa-home"></i> Home</a></li>
       <li class="divider"></li>
-      <li ui-sref-active="active">
-      <a ui-sref="material">Material</a>
-      </li>
+      <li ui-sref-active="active"><a ui-sref="material"><i class="fa fa-file-text"></i> Material</a></li>
       <li class="divider"></li>
-      <li ui-sref-active="active">
-      <a ui-sref="fotogaleria">Fotogaleria</a>
-      </li>
+      <li ui-sref-active="active"><a ui-sref="fotogaleria"><i class="fa fa-camera-retro"></i> Fotogalería</a></li>
       <li class="divider"></li>
-      <li ui-sref-active="active">
-      <a ui-sref="sedes">Sedes</a>
-      </li>
+      <li ui-sref-active="active"><a ui-sref="sedes"><i class="fa fa-university"></i> Sedes</a></li>
       <li class="divider"></li>
-      <li ui-sref-active="active">
-      <a ui-sref="faq">FAQ</a>
-      </li>
+      <li ui-sref-active="active"><a ui-sref="faq"><i class="fa fa-question-circle"></i> FAQ</a></li>
     </ul>
   </nav>
-  <div id="main-view" ui-view></div>
+  <div id="main-view" class="wrapper" ui-view></div>
+  <footer class="row">
+    <div class="col-5">
+      <p> © TImpulsa, 2014. En colaboración con <a href="#">SAITC</a> y <a href="#">Fundación Territorium</a></p>
+    </div>
+    <div class="col-2">
+      <img>
+    </div>
+    <div class="pull-right col-5">
+      <ul class="clearfix">
+        <li><a href="https://www.facebook.com/TImpulsa"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+        <li><a href="mailto:contactotimpulsa@gmail.com"><i class="fa fa-envelope-o"></i> Email</a></li>
+      </ul>
+    </div>
+  </footer>
+</section>
 
   <!--includes javascript at the bottom so the page loads faster-->
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
