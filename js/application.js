@@ -1,5 +1,5 @@
 (function(){
-  var app = angular.module('TImpulsa', ['ui.router'])
+  var app = angular.module('TImpulsa', ['ui.router', 'uiRouterStyles', 'material'])
       .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         $locationProvider.html5Mode(true);
         $urlRouterProvider.otherwise("/");
@@ -15,8 +15,9 @@
         .state('material', {
             url: "/material",
             templateUrl: 'views/material.html',
-            controller: function($scope, $rootScope){
-              $rootScope.title='TImpulsa - Material';
+            controller: 'MaterialController',
+            data: {
+                css: '/css/material.css'
             }
           })
         .state('fotogaleria', {
