@@ -25,6 +25,9 @@
             templateUrl: 'views/fotogaleria.html',
             controller: function($scope, $rootScope){
               $rootScope.title='TImpulsa - Fotogaleria';
+            },
+            data: {
+                css: '/css/fotogaleria.css'
             }
           })
         .state('sedes', {
